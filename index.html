@@ -23,12 +23,13 @@
         <div class="menu-toggle"><i class="fas fa-bars"></i></div>
         <nav>
             <ul>
-                <li><a href="#home">Ana Sayfa</a></li>
-                <li><a href="#about">Hakkımızda</a></li>
-                <li><a href="#history">Yarışmalar</a></li>
-                <li><a href="#robot">Robotlar</a></li>
-                <li><a href="#team">Ekibimiz</a></li>
-                <li><a href="#contact">İletişim</a></li>
+                <li><a href="#home" data-i18n="nav_home">Ana Sayfa</a></li>
+                <li><a href="#about" data-i18n="nav_about">Hakkımızda</a></li>
+                <li><a href="#history" data-i18n="nav_competitions">Yarışmalar</a></li>
+                <li><a href="#robot" data-i18n="nav_robots">Robotlar</a></li>
+                <li><a href="#team" data-i18n="nav_team">Ekibimiz</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">İletişim</a></li>
+                <li><button id="lang-toggle-btn" class="lang-btn">EN</button></li>
             </ul>
         </nav>
     </header>
@@ -40,18 +41,18 @@
         
         <h1>EAGLE WARRIORS</h1>
         <h2>#10542</h2>
-        <p style="color: var(--text-muted); max-width: 600px; margin-bottom: 30px;">
+        <p style="color: var(--text-muted); max-width: 600px; margin-bottom: 30px;" data-i18n="hero_desc">
             Bilim, mühendislik ve inovasyon tutkusuyla yeni nesil teknolojilere kanat açıyoruz.
         </p>
-        <a href="#contact" class="btn">Bize Ulaşın</a>
+        <a href="#contact" class="btn" data-i18n="hero_btn">Bize Ulaşın</a>
     </section>
 
     <section id="about">
-        <h2 class="section-title">Hakkımızda</h2>
+        <h2 class="section-title" data-i18n="about_title">Hakkımızda</h2>
         <div class="about-grid">
             <div class="about-text">
-                <p>Ekim 2024’te Kartal’da kurulan <strong>Eagle Warriors</strong>; 44 öğrenci ve 1 mentörden oluşan dinamik bir FRC takımıdır. Amacımız, gençleri teknolojiyi tüketen değil, üreten bireylere dönüştürerek STEM disipliniyle geleceğin liderlerini yetiştirmektir.</p>
-                <p>FIRST’ün Duyarlı Profesyonellik ve Birlikte Rekabet ilkelerini rehber edinerek; sadece robot inşa etmiyor, yaratıcı problem çözen ve inovasyonu yaygınlaştıran bir mühendislik kültürü oluşturuyoruz. Yerelde başlayan bu yolculuğu, evrensel bir başarı hikayesine dönüştürmek için sahadayız.</p>
+                <p data-i18n="about_p1">Ekim 2024’te Kartal’da kurulan <strong>Eagle Warriors</strong>; 44 öğrenci ve 1 mentörden oluşan dinamik bir FRC takımıdır. Amacımız, gençleri teknolojiyi tüketen değil, üreten bireylere dönüştürerek STEM disipliniyle geleceğin liderlerini yetiştirmektir.</p>
+                <p data-i18n="about_p2">FIRST’ün Duyarlı Profesyonellik ve Birlikte Rekabet ilkelerini rehber edinerek; sadece robot inşa etmiyor, yaratıcı problem çözen ve inovasyonu yaygınlaştıran bir mühendislik kültürü oluşturuyoruz. Yerelde başlayan bu yolculuğu, evrensel bir başarı hikayesine dönüştürmek için sahadayız.</p>
             </div>
             <div class="photo-placeholder">
                 <img src="img/team.jpg" alt="Takım Fotoğrafı" onerror="this.style.display='none'; this.parentNode.innerText='[TAKIM FOTOĞRAFI YÜKLE]'">
@@ -60,102 +61,101 @@
     </section>
 
     <section id="history" style="background: var(--bg-card);">
-        <h2 class="section-title">Yolculuğumuz & Başarılar</h2>
+        <h2 class="section-title" data-i18n="history_title">Yolculuğumuz & Başarılar</h2>
 
         <div class="timeline">
 
             <div class="timeline-item">
-                <div class="timeline-date">Ekim 2024</div>
+                <div class="timeline-date" data-i18n="hist_date1">Ekim 2024</div>
                 <div class="timeline-content">
-                    <div class="timeline-title">Takım Kuruluşu</div>
-                    <p style="color: var(--text-muted); font-size: 0.9rem;">
+                    <div class="timeline-title" data-i18n="hist_title1">Takım Kuruluşu</div>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;" data-i18n="hist_desc1">
                         Eagle Warriors #10542 resmi olarak kuruldu ve çalışmalara başladı.
                     </p>
                 </div>
             </div>
 
             <div class="timeline-item">
-                <div class="timeline-date">Mart 2025</div>
+                <div class="timeline-date" data-i18n="hist_date2">Mart 2025</div>
                 <div class="timeline-content">
                     <div class="timeline-title">Haliç Regional 2025</div>
-                    <p style="color: var(--text-muted); font-size: 0.9rem;">
-                         
-                    </p> 
+                    <p style="color: var(--text-muted); font-size: 0.9rem;"></p> 
                 </div>
             </div>
 
             <div class="timeline-item">
-                <div class="timeline-date">Ekim 2025</div>
+                <div class="timeline-date" data-i18n="hist_date3">Ekim 2025</div>
                 <div class="timeline-content">
                     <div class="timeline-title">BİST Başakşehir Off-Season</div>
                     <p style="color: var(--text-muted); font-size: 0.9rem;">
-                        🥈 Finalist
+                        <span data-i18n="hist_desc3">🥈 Finalist</span>
                     </p> 
                 </div>
             </div>
 
             <div class="timeline-item">
-                <div class="timeline-date">Ekim 2025</div>
+                <div class="timeline-date" data-i18n="hist_date4">Ekim 2025</div>
                 <div class="timeline-content">
                     <div class="timeline-title">Ümraniye Off-Season</div>
-                    <p style="color: var(--text-muted); font-size: 0.9rem;">
-                         
-                    </p> 
+                    <p style="color: var(--text-muted); font-size: 0.9rem;"></p> 
                 </div>
             </div>
 
-            </div>
+        </div>
     </section>
 
     <section id="robot">
-        <h2 class="section-title">Robotlarımız</h2>
-        <p style="text-align: center; color: var(--text-muted); max-width: 700px; margin: 0 auto;">
+        <h2 class="section-title" data-i18n="robots_title">Robotlarımız</h2>
+        <p style="text-align: center; color: var(--text-muted); max-width: 700px; margin: 0 auto;" data-i18n="robots_desc">
             Her sezon daha iyisi için tasarlıyor ve üretiyoruz.
         </p>
 
         <div class="robot-gallery">
             
             <div class="robot-card">
-                <div class="season-badge">2025 REEFSCAPE</div> <div class="robot-image-area">
+                <div class="season-badge">2025 REEFSCAPE</div> 
+                <div class="robot-image-area">
                     <img src="img/regrobot25.png" alt="2025 Regional Robot" onerror="this.src='https://placehold.co/600x400/151e32/FFFFFF/png?text=2025+Regional+Robot'">
                 </div>
                 <div class="robot-info">
-                    <h3 class="robot-name">Regional Robotumuz</h3> <p class="robot-desc">
+                    <h3 class="robot-name" data-i18n="rob_title1">Regional Robotumuz</h3> 
+                    <p class="robot-desc" data-i18n="rob_desc1">
                         İlk yarışmamızda geliştirilmiş kitbot ile tecrübe kazandık.
                     </p>
                     <div class="robot-specs">
-                        <div class="spec-item"><i class="fas fa-gamepad"></i> Tank Drive</div>
-                        <div class="spec-item"><i class="fas fa-cog"></i> Kitbot+</div>
+                        <div class="spec-item"><i class="fas fa-gamepad"></i> <span data-i18n="rob_spec1_1">Tank Drive</span></div>
+                        <div class="spec-item"><i class="fas fa-cog"></i> <span data-i18n="rob_spec1_2">Kitbot+</span></div>
                     </div>
                 </div>
             </div>
 
             <div class="robot-card">
-                <div class="season-badge" style="background: #ff0055; color: white;">2025 REEFSCAPE OFF-SEASON</div> <div class="robot-image-area">
+                <div class="season-badge" style="background: #ff0055; color: white;">2025 REEFSCAPE OFF-SEASON</div> 
+                <div class="robot-image-area">
                     <img src="img/offrobot25.JPG" alt="2025 Off-Season Robot" onerror="this.src='https://placehold.co/600x400/151e32/FFFFFF/png?text=2025+Off-Season+Robot'">
                 </div>
                 <div class="robot-info">
-                    <h3 class="robot-name">Off-Season Robotumuz</h3>
-                    <p class="robot-desc">
+                    <h3 class="robot-name" data-i18n="rob_title2">Off-Season Robotumuz</h3>
+                    <p class="robot-desc" data-i18n="rob_desc2">
                         İlk yarışmamızda edindiğimiz tecrübemizi pekiştirdik.
                     </p>
                     <div class="robot-specs">
-                        <div class="spec-item"><i class="fas fa-gamepad"></i> Swerve Drive</div>
+                        <div class="spec-item"><i class="fas fa-gamepad"></i> <span data-i18n="rob_spec2_1">Swerve Drive</span></div>
                     </div>
                 </div>
             </div>
 
-            </div>
+        </div>
     </section>
 
     <section id="team">
-        <h2 class="section-title">Ekibimiz</h2>
+        <h2 class="section-title" data-i18n="team_title">Ekibimiz</h2>
         
         <div class="mentor-level">
             <div class="team-card card-mentor">
                 <i class="fas fa-user-tie" style="font-size: 2.5rem; color: #e0e0e0; margin-bottom: 15px;"></i>
                 <div style="font-size:1.4rem; font-weight:bold; color: #e0e0e0;">Kürşat Bilir</div>
-                <div style="color: var(--text-muted); font-weight:bold; font-size:0.9rem; letter-spacing: 1px;">LEAD MENTOR</div>
+                <div style="color: var(--text-muted); font-weight:bold; font-size:0.9rem; letter-spacing: 1px;" data-i18n="team_mentor_role">LEAD MENTOR</div>
             </div>
         </div>
 
@@ -164,13 +164,13 @@
             <div class="team-card card-captain">
                 <i class="fas fa-crown" style="font-size: 2.5rem; color: gold; margin-bottom: 15px;"></i>
                 <div style="font-size:1.3rem; font-weight:bold; color: white;">Beşir Kaan Kahraman</div>
-                <div style="color: gold; font-weight:bold; font-size: 0.9rem;">TAKIM KAPTANI</div>
+                <div style="color: gold; font-weight:bold; font-size: 0.9rem;" data-i18n="team_cap_role">TAKIM KAPTANI</div>
             </div>
 
             <div class="team-card card-co-captain">
                 <i class="fas fa-star" style="font-size: 2.5rem; color: var(--accent-blue); margin-bottom: 15px;"></i>
                 <div style="font-size:1.3rem; font-weight:bold; color: white;">Kerem Yılmaz</div>
-                <div style="color: var(--accent-blue); font-weight:bold; font-size:0.9rem;">2. TAKIM KAPTANI</div>
+                <div style="color: var(--accent-blue); font-weight:bold; font-size:0.9rem;" data-i18n="team_cocap_role">2. TAKIM KAPTANI</div>
             </div>
             
         </div>
@@ -180,13 +180,13 @@
             <div class="subteam-box">
                 <div class="subteam-header">
                     <i class="fas fa-wrench"></i>
-                    <h3>Mekanik & Tasarım</h3>
+                    <h3 data-i18n="sub_mech_title">Mekanik & Tasarım</h3>
                 </div>
                 <div class="subteam-captain-area">
                     <i class="fas fa-user-circle" style="font-size: 2rem; color: var(--accent-blue);"></i>
                     <div>
                         <div style="font-weight: bold; font-size: 1.1rem;">Metehan Temel</div>
-                        <span class="captain-badge">Mekanik Kaptanı</span>
+                        <span class="captain-badge" data-i18n="sub_mech_role">Mekanik Kaptanı</span>
                     </div>
                 </div>
                 <div class="subteam-members">
@@ -202,13 +202,13 @@
             <div class="subteam-box">
                 <div class="subteam-header">
                     <i class="fas fa-laptop-code"></i>
-                    <h3>Yazılım</h3>
+                    <h3 data-i18n="sub_soft_title">Yazılım</h3>
                 </div>
                 <div class="subteam-captain-area">
                     <i class="fas fa-user-circle" style="font-size: 2rem; color: var(--accent-blue);"></i>
                     <div>
                         <div style="font-weight: bold; font-size: 1.1rem;">Furkan Efe Aktaş</div>
-                        <span class="captain-badge">Yazılım Kaptanı</span>
+                        <span class="captain-badge" data-i18n="sub_soft_role">Yazılım Kaptanı</span>
                     </div>
                 </div>
                 <div class="subteam-members">
@@ -223,13 +223,13 @@
             <div class="subteam-box">
                 <div class="subteam-header">
                     <i class="fas fa-microchip"></i>
-                    <h3>Elektrik - Elektronik</h3>
+                    <h3 data-i18n="sub_elec_title">Elektrik - Elektronik</h3>
                 </div>
                 <div class="subteam-captain-area">
                     <i class="fas fa-user-circle" style="font-size: 2rem; color: var(--accent-blue);"></i>
                     <div>
                         <div style="font-weight: bold; font-size: 1.1rem;">Aydın Can Arıcan</div>
-                        <span class="captain-badge">Elektronik Kaptanı</span>
+                        <span class="captain-badge" data-i18n="sub_elec_role">Elektronik Kaptanı</span>
                     </div>
                 </div>
                 <div class="subteam-members">
@@ -242,13 +242,13 @@
             <div class="subteam-box">
                 <div class="subteam-header">
                     <i class="fas fa-camera"></i>
-                    <h3>PR & Medya</h3>
+                    <h3 data-i18n="sub_pr_title">PR & Medya</h3>
                 </div>
                 <div class="subteam-captain-area">
                     <i class="fas fa-user-circle" style="font-size: 2rem; color: var(--accent-blue);"></i>
                     <div>
                         <div style="font-weight: bold; font-size: 1.1rem;">Kutay Şimşek</div>
-                        <span class="captain-badge">PR Kaptanı</span>
+                        <span class="captain-badge" data-i18n="sub_pr_role">PR Kaptanı</span>
                     </div>
                 </div>
                 <div class="subteam-members">
@@ -263,7 +263,7 @@
     </section>
 
     <section id="sponsors" style="background: var(--bg-card);">
-        <h2 class="section-title">Sponsorlarımız</h2>
+        <h2 class="section-title" data-i18n="sponsors_title">Sponsorlarımız</h2>
         <div class="sponsors-flex">
             <div class="sponsor-box"><img src="img/gorgonx.png" alt=""></div>
             <div class="sponsor-box"><img src="img/boeing.png" alt=""></div>
@@ -283,10 +283,12 @@
             </div>
             
             <p style="color: var(--text-muted); margin-bottom: 5px;">
-                <i class="fas fa-map-marker-alt"></i> Yunus, Sanayi Cd. no:2, 34873 Kartal/İstanbul
+                <i class="fas fa-map-marker-alt"></i> 
+                <a href="https://maps.app.goo.gl/9wzzb4oJ5LJj6S7Q6" target="_blank" data-i18n="footer_address" style="color: inherit; text-decoration: none;">Yunus, Sanayi Cd. no:2, 34873 Kartal/İstanbul</a>
             </p>
             <p style="color: var(--text-muted); margin-bottom: 20px;">
-                <i class="fas fa-envelope"></i> contact@team10542.com
+                <i class="fas fa-envelope"></i> 
+                <a href="mailto:contact@team10542.com" target="_blank" style="color: inherit; text-decoration: none;">contact@team10542.com</a>
             </p>
 
             <div class="social-icons">
@@ -296,7 +298,7 @@
             </div>
             
             <p style="margin-top: 30px; font-size: 0.8rem; color: #555;">
-                &copy; 2025 Eagle Warriors FRC Team.
+                &copy; <span data-i18n="footer_copy">2025 Eagle Warriors FRC Team.</span>
             </p>
         </footer>
     </section>
@@ -314,8 +316,122 @@
                 navUl.classList.remove('active');
             });
         });
+
+        // --- İNGİLİZCE - TÜRKÇE DİL SİSTEMİ ---
+        const translations = {
+            tr: {
+                nav_home: "Ana Sayfa",
+                nav_about: "Hakkımızda",
+                nav_competitions: "Yarışmalar",
+                nav_robots: "Robotlar",
+                nav_team: "Ekibimiz",
+                nav_contact: "İletişim",
+                hero_desc: "Bilim, mühendislik ve inovasyon tutkusuyla yeni nesil teknolojilere kanat açıyoruz.",
+                hero_btn: "Bize Ulaşın",
+                about_title: "Hakkımızda",
+                about_p1: "Ekim 2024’te Kartal’da kurulan <strong>Eagle Warriors</strong>; 44 öğrenci ve 1 mentörden oluşan dinamik bir FRC takımıdır. Amacımız, gençleri teknolojiyi tüketen değil, üreten bireylere dönüştürerek STEM disipliniyle geleceğin liderlerini yetiştirmektir.",
+                about_p2: "FIRST’ün Duyarlı Profesyonellik ve Birlikte Rekabet ilkelerini rehber edinerek; sadece robot inşa etmiyor, yaratıcı problem çözen ve inovasyonu yaygınlaştıran bir mühendislik kültürü oluşturuyoruz. Yerelde başlayan bu yolculuğu, evrensel bir başarı hikayesine dönüştürmek için sahadayız.",
+                history_title: "Yolculuğumuz & Başarılar",
+                hist_date1: "Ekim 2024",
+                hist_title1: "Takım Kuruluşu",
+                hist_desc1: "Eagle Warriors #10542 resmi olarak kuruldu ve çalışmalara başladı.",
+                hist_date2: "Mart 2025",
+                hist_date3: "Ekim 2025",
+                hist_desc3: "🥈 Finalist",
+                hist_date4: "Ekim 2025",
+                robots_title: "Robotlarımız",
+                robots_desc: "Her sezon daha iyisi için tasarlıyor ve üretiyoruz.",
+                rob_title1: "Regional Robotumuz",
+                rob_desc1: "İlk yarışmamızda geliştirilmiş kitbot ile tecrübe kazandık.",
+                rob_spec1_1: "Tank Drive",
+                rob_spec1_2: "Kitbot+",
+                rob_title2: "Off-Season Robotumuz",
+                rob_desc2: "İlk yarışmamızda edindiğimiz tecrübemizi pekiştirdik.",
+                rob_spec2_1: "Swerve Drive",
+                team_title: "Ekibimiz",
+                team_mentor_role: "LEAD MENTOR",
+                team_cap_role: "TAKIM KAPTANI",
+                team_cocap_role: "2. TAKIM KAPTANI",
+                sub_mech_title: "Mekanik & Tasarım",
+                sub_mech_role: "Mekanik Kaptanı",
+                sub_soft_title: "Yazılım",
+                sub_soft_role: "Yazılım Kaptanı",
+                sub_elec_title: "Elektrik - Elektronik",
+                sub_elec_role: "Elektronik Kaptanı",
+                sub_pr_title: "PR & Medya",
+                sub_pr_role: "PR Kaptanı",
+                sponsors_title: "Sponsorlarımız",
+                footer_address: "Yunus, Sanayi Cd. no:2, 34873 Kartal/İstanbul",
+                footer_copy: "2025 Eagle Warriors FRC Team."
+            },
+            en: {
+                nav_home: "Home",
+                nav_about: "About Us",
+                nav_competitions: "Competitions",
+                nav_robots: "Robots",
+                nav_team: "Our Team",
+                nav_contact: "Contact",
+                hero_desc: "Spreading wings to next-generation technologies with a passion for science, engineering, and innovation.",
+                hero_btn: "Contact Us",
+                about_title: "About Us",
+                about_p1: "Founded in October 2024 in Kartal, <strong>Eagle Warriors</strong> is a dynamic FRC team consisting of 44 students and 1 mentor. Our goal is to transform youth into tech creators, raising future leaders through STEM disciplines.",
+                about_p2: "Guided by FIRST's Gracious Professionalism and Coopertition principles, we don't just build robots; we build an engineering culture of creative problem-solvers. We are on the field to turn this local journey into a universal success story.",
+                history_title: "OUR JOURNEY & ACHIEVEMENTS",
+                hist_date1: "October 2024",
+                hist_title1: "Team Foundation",
+                hist_desc1: "Eagle Warriors #10542 was officially founded and started its operations.",
+                hist_date2: "March 2025",
+                hist_date3: "October 2025",
+                hist_desc3: "🥈 Finalist",
+                hist_date4: "October 2025",
+                robots_title: "Our Robots",
+                robots_desc: "Designing and manufacturing for the better, every season.",
+                rob_title1: "Our Regional Robot",
+                rob_desc1: "We gained experience with an upgraded kitbot in our first competition.",
+                rob_spec1_1: "Tank Drive",
+                rob_spec1_2: "Kitbot+",
+                rob_title2: "Our Off-Season Robot",
+                rob_desc2: "We consolidated the experience we gained in our first competition.",
+                rob_spec2_1: "Swerve Drive",
+                team_title: "Our Team",
+                team_mentor_role: "LEAD MENTOR",
+                team_cap_role: "TEAM CAPTAIN",
+                team_cocap_role: "CO-CAPTAIN",
+                sub_mech_title: "Mechanics & Design",
+                sub_mech_role: "MECHANICS CAPTAIN",
+                sub_soft_title: "Software",
+                sub_soft_role: "SOFTWARE CAPTAIN",
+                sub_elec_title: "Electrical & Electronics",
+                sub_elec_role: "ELECTRONICS CAPTAIN",
+                sub_pr_title: "PR & Media",
+                sub_pr_role: "PR CAPTAIN",
+                sponsors_title: "Our Sponsors",
+                footer_address: "Yunus, Sanayi Cd. No:2, 34873 Kartal/Istanbul",
+                footer_copy: "2025 Eagle Warriors FRC Team."
+            }
+        };
+
+        const langBtn = document.getElementById("lang-toggle-btn");
+        let currentLang = localStorage.getItem("siteLang") || "tr"; 
+
+        function updateLanguage(lang) {
+            document.querySelectorAll("[data-i18n]").forEach(el => {
+                const key = el.getAttribute("data-i18n");
+                if (translations[lang][key]) {
+                    el.innerHTML = translations[lang][key];
+                }
+            });
+
+            langBtn.textContent = lang === "tr" ? "EN" : "TR";
+            localStorage.setItem("siteLang", lang);
+        }
+
+        langBtn.addEventListener("click", () => {
+            currentLang = currentLang === "tr" ? "en" : "tr";
+            updateLanguage(currentLang);
+        });
+        updateLanguage(currentLang);
     </script>
 
 </body>
 </html>
-
